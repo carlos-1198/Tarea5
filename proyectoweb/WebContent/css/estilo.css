@@ -1,0 +1,280 @@
+@charset "ISO-8859-1";
+
+* {
+    border: 0;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    /* font-family: 'Staatliches', cursive; */
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+#particles-js
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body { background-color: #5726FF; overflow-x: hidden; }
+
+.c {
+    background-color: #5726FF;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.navc {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .5em 0;
+    width: 80%;
+}
+
+.navc img {
+    width: 40px;
+    height: 40px;
+}
+
+.logoc {
+    color: white;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+}
+
+.ulc {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.lic {
+    transition: .5s;
+}
+
+.ac {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lic:hover{
+    opacity: .8;
+    transform: translateY(-5px);
+}
+
+.indexs {
+    position: relative;
+    z-index: 2;
+    padding: 3em 0;
+    width: 100%;
+}
+
+.indexart{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.indexart img {
+    width: 45%;
+}
+
+.indexart div {
+    width: 45%;
+}
+
+.indexart div h1 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 5vw;
+}
+
+.indexart div p {
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.logins {
+    position: relative;
+    z-index: 2;
+    padding: 3em 0;
+    width: 100%;
+}
+
+.listnart {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.loginart {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 300px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0;
+    text-align: center;
+    width: 240px;
+}
+
+form h1 {
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.cajadiv {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form .boton {
+    background-color: #5726FF;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 33px;
+    margin-bottom: 1em;
+    transition: .5s;
+    width: 100%;
+}
+
+input {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #B2B2B2;
+    height: 100%;
+    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+}
+
+.footer {
+    width: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+/* tabla */
+
+#main-container{
+	position: relative;
+	z-index: 22;
+	width: 100%;
+}
+
+table{
+    border-radius: 10px;
+    overflow: hidden;
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: black;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2 ;
+}
+
+tr:hover td{
+	background-color: #5726FF;
+	color: white;
+}
+
+/* consultar */
+
+.consultar {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 22;
+    width: 100%;
+}
+
+.subconsulta {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .5em 0;
+    width: 90%;
+}
+
+.subconsulta div {
+    display: flex;
+    height: 25px;
+    width: 300px;
+}
+
+.btnbuscar {
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    text-align: left;
+    padding-left: .7em;
+    background-color: #5726FF;
+    width: 120px;
+    height: 28px;
+}
+
+@media (max-width: 900px) {
+    .indexart {
+        flex-direction: column;
+    }
+
+    .indexart img {
+        width: 100%;
+    }
+
+    .indexart div {
+        padding-top: 2em;
+        width: 100%;
+    }
+
+    .ulc {
+        flex-direction: column;
+    }
+
+    .listnart {
+        width: 90%;
+    }
+}
